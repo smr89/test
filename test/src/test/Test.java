@@ -3,31 +3,17 @@ import java.util.Scanner;
 
 public class Test {
 
+	private static Scanner teclado;
+
 	public static void main(String[] args) {
 		
-		Scanner teclado = new Scanner(System.in);
+		teclado = new Scanner(System.in);
 		String nombre = null;
-		int edad = 0;
 		
-		datos_persona(teclado,nombre,edad);
-
-	}
-	
-	
-	private static String datos_persona(Scanner teclado, String nombre, int edad) {
-		
-		System.out.println("Indique el nombre: ");
+		System.out.println("Hola mundo");
+		System.out.println("Indique su nombre: ");
 		nombre = teclado.nextLine();
-		
-		System.out.println("Indique la edad: ");
-		edad = teclado.nextInt();
-		
-		System.out.println(nombre);
-		System.out.println(edad);
-		
-		return nombre;
+		System.out.println("Hola " +nombre);
 	}
-	
-	
 	
 }
